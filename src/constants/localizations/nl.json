@@ -1,0 +1,22 @@
+{
+  "site": {
+    "title": "Silweb.dev",
+    "navigation": {
+      "portfolio": "Portfolio",
+      "skills": "Skills",
+      "contact": "Contact"
+    }
+  },
+  "intro": {
+    "title": "Hoi, ik ben <strong>Silvan</strong>",
+    "description": {
+      "line1": "een <strong>frontend</strong> en",
+      "line2": "<strong>backend</strong> developer"
+    },
+    "showWork": "Zie mijn werk"
+  },
+  "projects": {
+    "subtitle": "Portfolio",
+    "title": "Projecten waar ik aan gewerkt heb"
+  }
+}

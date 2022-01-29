@@ -1,0 +1,30 @@
+---
+import { Project } from "../../models/project";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import constants from "../../constants";
+import Header from "../../components/header/header.svelte";
+import i18next from "../../utils/i18next";
+import Intro from "../../components/intro/intro.svelte";
+import Projects from "../../components/projects/projects.svelte";
+
+const { locale } = Astro.request.params;
+
+i18next.changeLanguage(locale);
+
+const projects = constants.projects[locale] as Project[];
+
+export async function getStaticPaths() {
+  return [
+    { params: { locale: 'en' } },
+    { params: { locale: 'nl' } },
+  ];
+}
+---
+
+<BaseLayout language={locale} title='Home'>
+	<main>
+    <Header />
+		<Intro />
+		<Projects projects={projects} />
+	</main>
+</BaseLayout>

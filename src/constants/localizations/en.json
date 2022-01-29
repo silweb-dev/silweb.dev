@@ -1,0 +1,10 @@
+{
+  "site": {
+    "title": "Silweb.dev",
+    "navigation": {
+      "portfolio": "Portfolio",
+      "skills": "Skills",
+      "contact": "Contact"
+    }
+  }
+}
