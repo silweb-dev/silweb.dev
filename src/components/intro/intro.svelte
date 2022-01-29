@@ -12,12 +12,12 @@
         <span>{@html i18next.t("intro.description.line2")}</span>
       </h3>
     </div>
-    <div class="bottom">
-      <button class="show-work">
-        <Icon name="chevron-down" size={3} />
-        {i18next.t("intro.showWork")}
-      </button>
-    </div>
+  </div>
+  <div class="bottom">
+    <button class="show-work">
+      <Icon name="chevron-down" size={3} />
+      {i18next.t("intro.showWork")}
+    </button>
   </div>
 </section>
 
@@ -27,7 +27,8 @@
     background: linear-gradient(-45deg, #0b132b, var(--blue-400));
     background-size: 400% 400%;
     height: 80rem;
-    padding-top: 10rem;
+    max-height: 90vh;
+    position: relative;
     width: 100%;
   }
 
@@ -38,6 +39,7 @@
     justify-content: center;
     margin: 0 auto;
     max-width: var(--content-width);
+    padding: 10rem 1.2rem 0 1.2rem;
   }
 
   .greeting {
@@ -48,7 +50,7 @@
     color: var(--white);
     font-family: var(--font-secondary);
     font-size: 4.5rem;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   .title :global(strong) {
@@ -64,7 +66,7 @@
     color: var(--white);
     font-family: var(--font-secondary);
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 4.4rem;
   }
 
@@ -74,8 +76,12 @@
 
   .bottom {
     bottom: 0;
-    padding: 1.2rem 0;
+    padding: 1.8rem 0;
     position: absolute;
+    margin: 0 auto;
+    max-width: var(--content-width);
+    left: 0;
+    right: 0;
   }
 
   .show-work {
@@ -85,9 +91,11 @@
     color: var(--white);
     cursor: pointer;
     display: flex;
+    font-family: var(--font-secondary);
     font-size: 1.6rem;
     font-weight: 600;
-    gap: 1.2rem;
+    gap: 0.8rem;
+    opacity: 0.8;
   }
 
   @keyframes gradient {

@@ -21,10 +21,10 @@ export async function getStaticPaths() {
 }
 ---
 
-<BaseLayout language={locale} title='Home'>
+<BaseLayout locale={locale} title='Home'>
 	<main>
     <Header />
 		<Intro />
-		<Projects projects={projects} />
+		<Projects projects={projects} client:visible />
 	</main>
 </BaseLayout>

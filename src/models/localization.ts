@@ -1,4 +1,5 @@
 import { NavigationItem } from "../models/navigation";
+import { Technique } from "../models/technique";
 
 export type Locale = "en" | "nl";
 
@@ -18,7 +19,9 @@ export type Localization = {
   projects: {
     subtitle: string;
     title: string;
+    seeProject: string;
   };
+  techniques: Record<Technique, string>;
 };
 
 export type Namespace = keyof Localization;

@@ -30,9 +30,11 @@
 
   .inner {
     display: flex;
+    flex-direction: column;
     height: 100%;
     margin: 0 auto;
     max-width: var(--content-width);
+    padding: 0 1.2rem;
 
     &.left {
       justify-content: flex-start;
@@ -66,6 +68,7 @@
     color: var(--white);
     font-family: var(--font-secondary);
     font-size: 2.5rem;
+    line-height: 3.2rem;
     margin-top: 0;
     max-width: 30rem;
   }

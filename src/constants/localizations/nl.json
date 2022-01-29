@@ -17,6 +17,14 @@
   },
   "projects": {
     "subtitle": "Portfolio",
-    "title": "Projecten waar ik aan gewerkt heb"
+    "title": "Projecten waar ik aan gewerkt heb",
+    "seeProject": "Zie project"
+  },
+  "techniques": {
+    "next-js": "Next.js",
+    "react-js": "React.js",
+    "node-js": "Node.js",
+    "scss": "SCSS",
+    "socket-io": "Socket.io"
   }
 }

@@ -43,9 +43,10 @@
     left: 0;
     margin: 0 auto;
     max-width: var(--content-width);
+    padding: 1.2rem;
     position: absolute;
     right: 0;
-    padding: 1.2rem 0;
+    z-index: 1;
   }
 
   .title-container {

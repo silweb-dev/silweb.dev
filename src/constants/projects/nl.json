@@ -1,6 +1,32 @@
 [
   {
     "id": "syncwatch-video",
-    "title": "SyncWatch.Video"
+    "title": "SyncWatch.Video",
+    "type": "Web App",
+    "description": "SyncWatch.Video is een webapplicatie waarmee gebruikers samen synchroon video's van onder andere YouTube kunnen kijken.",
+    "techniques": [
+      "next-js",
+      "react-js",
+      "node-js",
+      "scss",
+      "socket-io"
+    ],
+    "preview": "syncwatch.gif",
+    "url": "https://syncwatch.video"
+  },
+  {
+    "id": "pipopipette",
+    "title": "Pipopipette",
+    "type": "Web App",
+    "description": "Pipopipette brengt het Dots & Boxes spel van papier naar het web. Speel het samen online met een vriend, of zelfs met twee of drie vrienden tegelijk!",
+    "techniques": [
+      "next-js",
+      "react-js",
+      "node-js",
+      "scss",
+      "socket-io"
+    ],
+    "preview": "",
+    "url": "https://pipopipette.com"
   }
 ]
