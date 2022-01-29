@@ -1,5 +1,5 @@
 <script lang="ts">
-  import i18next from "../../utils/i18next";
+  import i18next from "../utils/i18next";
 </script>
 
 <header class="header">
@@ -12,7 +12,7 @@
     <nav class="nav">
       <ul>
         <li>
-          <a href="#portfolio">{i18next.t("site.navigation.portfolio")}</a>
+          <a href="#projects">{i18next.t("site.navigation.portfolio")}</a>
         </li>
         <li>
           <a href="#skills">{i18next.t("site.navigation.skills")}</a>
@@ -102,6 +102,12 @@
 
     &.selected {
       background: var(--cyan-400);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .nav {
+      display: none;
     }
   }
 </style>

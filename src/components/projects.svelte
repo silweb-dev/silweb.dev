@@ -1,9 +1,9 @@
 <script lang="ts">
-  import { formatNumber } from "../../utils/format";
-  import { Project } from "../../models/project";
-  import i18next from "../../utils/i18next";
-  import Icon from "../icon/icon.svelte";
-  import Section from "../section/section.svelte";
+  import { formatNumber } from "../utils/format";
+  import { Project } from "../models/project";
+  import i18next from "../utils/i18next";
+  import Icon from "./icon.svelte";
+  import Section from "./section.svelte";
 
   export let projects: Project[];
 
@@ -36,6 +36,7 @@
 </script>
 
 <Section
+  id="projects"
   subtitle={i18next.t("projects.subtitle")}
   title={i18next.t("projects.title")}
 >
@@ -137,7 +138,8 @@
   }
 
   .project {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2.4rem;
   }
 
@@ -145,17 +147,12 @@
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    flex: 1 1 50%;
-  }
-
-  .project-preview {
-    flex: 1 1 50%;
   }
 
   .preview {
-    width: 100%;
-    position: relative;
     aspect-ratio: 16/9;
+    position: relative;
+    width: 100%;
   }
 
   .preview-image {
@@ -231,6 +228,32 @@
 
     &:hover {
       background: var(--cyan-400);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .project {
+      grid-template-columns: 1fr;
+    }
+
+    .project-preview {
+      margin: 2.4rem 0;
+    }
+
+    .preview-image {
+      border-radius: 0.4rem;
+      left: 0;
+      right: 0;
+      top: 0;
+      width: 100%;
+    }
+
+    .preview-frame {
+      display: none;
+    }
+
+    .project-techniques {
+      grid-template-columns: 1fr 1fr;
     }
   }
 </style>

@@ -20,6 +20,10 @@
     "title": "Projecten waar ik aan gewerkt heb",
     "seeProject": "Zie project"
   },
+  "skills": {
+    "subtitle": "Skills",
+    "title": "De vaardigheden die ik bezit"
+  },
   "techniques": {
     "next-js": "Next.js",
     "react-js": "React.js",

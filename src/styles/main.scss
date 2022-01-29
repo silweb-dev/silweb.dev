@@ -71,6 +71,12 @@ html {
   font-family: var(--font-primary), sans-serif;
   /* 1rem = 10px */
   font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  @media (max-width: 768px) {
+    /* 1rem = 8px */
+    font-size: 50%;
+  }
 }
 
 body {

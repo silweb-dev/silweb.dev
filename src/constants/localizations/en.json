@@ -6,5 +6,29 @@
       "skills": "Skills",
       "contact": "Contact"
     }
+  },
+  "intro": {
+    "title": "Hoi, ik ben <strong>Silvan</strong>",
+    "description": {
+      "line1": "een <strong>frontend</strong> en",
+      "line2": "<strong>backend</strong> developer"
+    },
+    "showWork": "Zie mijn werk"
+  },
+  "projects": {
+    "subtitle": "Portfolio",
+    "title": "Projecten waar ik aan gewerkt heb",
+    "seeProject": "Zie project"
+  },
+  "skills": {
+    "subtitle": "Skills",
+    "title": "De vaardigheden die ik bezit"
+  },
+  "techniques": {
+    "next-js": "Next.js",
+    "react-js": "React.js",
+    "node-js": "Node.js",
+    "scss": "SCSS",
+    "socket-io": "Socket.io"
   }
 }

@@ -1,10 +1,11 @@
 <script lang="ts">
+  export let id: string;
   export let subtitle: string;
   export let title: string;
   export let align: "left" | "center" | "right" = "left";
 </script>
 
-<section class="section">
+<section class="section" {id}>
   <div
     class="inner"
     class:left={align === "left"}
@@ -24,7 +25,6 @@
 <style lang="scss">
   .section {
     background-color: var(--blue-400);
-    height: 80rem;
     width: 100%;
   }
 
@@ -54,6 +54,20 @@
 
   .header {
     padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+
+    .left & {
+      align-items: flex-start;
+    }
+
+    .center & {
+      align-items: center;
+    }
+
+    .right & {
+      align-items: flex-end;
+    }
   }
 
   .subtitle {
@@ -71,5 +85,9 @@
     line-height: 3.2rem;
     margin-top: 0;
     max-width: 30rem;
+  }
+
+  .content {
+    padding-bottom: 10rem;
   }
 </style>

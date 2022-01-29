@@ -1,6 +1,6 @@
 <script lang="ts">
-  import i18next from "../../utils/i18next";
-  import Icon from "../icon/icon.svelte";
+  import i18next from "../utils/i18next";
+  import Icon from "./icon.svelte";
 </script>
 
 <section class="section">

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Icon } from "../../models/icon";
+  import { Icon } from "../models/icon";
 
   export let name: Icon;
   export let color = "var(--white)";

@@ -21,6 +21,10 @@ export type Localization = {
     title: string;
     seeProject: string;
   };
+  skills: {
+    subtitle: string;
+    title: string;
+  };
   techniques: Record<Technique, string>;
 };
 
