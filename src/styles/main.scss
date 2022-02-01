@@ -58,8 +58,6 @@
   --font-primary: "Karla";
   --font-secondary: "Poppins";
 
-  --content-width: 1040px;
-
   --blue-400: #1c2541;
   --blue-300: #3a506b;
   --cyan-400: #5bc0be;
@@ -67,16 +65,15 @@
   --white: #fff;
 }
 
+:global(*) {
+  box-sizing: border-box;
+}
+
 html {
   font-family: var(--font-primary), sans-serif;
   /* 1rem = 10px */
   font-size: 62.5%;
   scroll-behavior: smooth;
-
-  @media (max-width: 768px) {
-    /* 1rem = 8px */
-    font-size: 50%;
-  }
 }
 
 body {

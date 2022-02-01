@@ -91,6 +91,8 @@
 </Section>
 
 <style lang="scss">
+  @use "../styles/mixins.scss" as *;
+
   .controls {
     align-items: center;
     display: flex;
@@ -139,14 +141,32 @@
 
   .project {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 2.4rem;
+    grid-template-areas:
+      "details"
+      "preview";
+    grid-template-columns: 1fr;
+
+    @include respond-to-tablet {
+      grid-template-areas: "details preview";
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   .project-details {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+    grid-area: details;
+  }
+
+  .project-preview {
+    grid-area: preview;
+    margin: 1.2rem 0;
+
+    @include respond-to-tablet {
+      margin: 0;
+    }
   }
 
   .preview {
@@ -160,100 +180,115 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    left: 0.8rem;
+    border-radius: 0.4rem;
+    left: 0;
     margin: 0 auto;
     position: absolute;
-    right: 0.8rem;
-    top: 1.2rem;
-    width: calc(100% - 5.4rem);
+    right: 0;
+    top: 0;
+    width: 100%;
+
+    @include respond-to-tablet {
+      left: 0;
+      right: 0;
+      top: 1rem;
+      width: 88%;
+    }
   }
 
   .preview-frame {
     aspect-ratio: 16/9;
+    display: none;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
+
+    @include respond-to-tablet {
+      display: block;
+    }
   }
 
   .project-title {
     color: var(--white);
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: 700;
     margin-bottom: 0.8rem;
+
+    @include respond-to-tablet {
+      font-size: 3rem;
+    }
   }
 
   .project-type {
     color: var(--cyan-400);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
     text-transform: uppercase;
+
+    @include respond-to-tablet {
+      font-size: 1.8rem;
+    }
   }
 
   .project-description {
     color: var(--white);
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 600;
     line-height: 2.4rem;
     max-width: 40rem;
+
+    @include respond-to-tablet {
+      font-size: 1.7rem;
+    }
   }
 
   .project-techniques {
     column-gap: 2.4rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 2.4rem;
     margin-top: 1.8rem;
     max-width: 40rem;
     row-gap: 1.8rem;
+
+    @include respond-to-tablet {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 
   .project-technique {
     align-items: center;
     color: var(--white);
     display: flex;
+    font-size: 1.6rem;
     gap: 1.2rem;
+
+    @include respond-to-tablet {
+      font-size: 1.7rem;
+    }
   }
 
   .project-button {
+    align-items: center;
     background: var(--blue-300);
     border-radius: 0.4rem;
     color: var(--white);
     display: flex;
+    font-size: 1.5rem;
     gap: 0.8rem;
+    line-height: 2.4rem;
     margin-top: 1.2rem;
     padding: 0.8rem 1.2rem;
     text-decoration: none;
     transition: 0.3s ease;
 
+    @include respond-to-tablet {
+      font-size: 1.6rem;
+    }
+
     &:hover {
       background: var(--cyan-400);
-    }
-  }
-
-  @media (max-width: 768px) {
-    .project {
-      grid-template-columns: 1fr;
-    }
-
-    .project-preview {
-      margin: 2.4rem 0;
-    }
-
-    .preview-image {
-      border-radius: 0.4rem;
-      left: 0;
-      right: 0;
-      top: 0;
-      width: 100%;
-    }
-
-    .preview-frame {
-      display: none;
-    }
-
-    .project-techniques {
-      grid-template-columns: 1fr 1fr;
     }
   }
 </style>

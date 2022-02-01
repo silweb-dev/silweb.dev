@@ -38,12 +38,12 @@
 </header>
 
 <style lang="scss">
+  @use "../styles/mixins.scss" as *;
+
   .header {
+    @include centered;
     display: flex;
     left: 0;
-    margin: 0 auto;
-    max-width: var(--content-width);
-    padding: 1.2rem;
     position: absolute;
     right: 0;
     z-index: 1;
@@ -64,6 +64,14 @@
     flex: 1;
     gap: 4.8rem;
     justify-content: flex-end;
+  }
+
+  .nav {
+    display: none;
+
+    @include respond-to-tablet {
+      display: block;
+    }
   }
 
   .nav ul {
@@ -102,12 +110,6 @@
 
     &.selected {
       background: var(--cyan-400);
-    }
-  }
-
-  @media (max-width: 768px) {
-    .nav {
-      display: none;
     }
   }
 </style>

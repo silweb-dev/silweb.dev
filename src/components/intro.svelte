@@ -14,14 +14,16 @@
     </div>
   </div>
   <div class="bottom">
-    <button class="show-work">
+    <a href="#projects" class="show-work">
       <Icon name="chevron-down" size={3} />
       {i18next.t("intro.showWork")}
-    </button>
+    </a>
   </div>
 </section>
 
-<style>
+<style lang="scss">
+  @use "../styles/mixins.scss" as *;
+
   .section {
     animation: gradient 15s ease infinite;
     background: linear-gradient(-45deg, #0b132b, var(--blue-400));
@@ -33,13 +35,12 @@
   }
 
   .inner {
+    @include centered;
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
-    margin: 0 auto;
-    max-width: var(--content-width);
-    padding: 10rem 1.2rem 0 1.2rem;
+    padding-top: 10rem;
   }
 
   .greeting {
@@ -49,8 +50,12 @@
   .title {
     color: var(--white);
     font-family: var(--font-secondary);
-    font-size: 4.5rem;
+    font-size: 3.8rem;
     font-weight: 700;
+
+    @include respond-to-tablet {
+      font-size: 4.5rem;
+    }
   }
 
   .title :global(strong) {
@@ -65,9 +70,14 @@
   .description span {
     color: var(--white);
     font-family: var(--font-secondary);
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: 700;
-    line-height: 4.4rem;
+    line-height: 3.4rem;
+
+    @include respond-to-tablet {
+      font-size: 3rem;
+      line-height: 4.4rem;
+    }
   }
 
   .description span :global(strong) {
@@ -75,12 +85,11 @@
   }
 
   .bottom {
+    @include centered;
     bottom: 0;
-    padding: 1.8rem 0;
-    position: absolute;
-    margin: 0 auto;
-    max-width: var(--content-width);
     left: 0;
+    padding-bottom: 1.8rem;
+    position: absolute;
     right: 0;
   }
 
@@ -92,10 +101,16 @@
     cursor: pointer;
     display: flex;
     font-family: var(--font-secondary);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 600;
     gap: 0.8rem;
     opacity: 0.8;
+    padding: 0;
+    text-decoration: none;
+
+    @include respond-to-tablet {
+      font-size: 1.6rem;
+    }
   }
 
   @keyframes gradient {

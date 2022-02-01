@@ -23,18 +23,18 @@
 </section>
 
 <style lang="scss">
+  @use "../styles/mixins.scss" as *;
+
   .section {
     background-color: var(--blue-400);
     width: 100%;
   }
 
   .inner {
+    @include centered;
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin: 0 auto;
-    max-width: var(--content-width);
-    padding: 0 1.2rem;
 
     &.left {
       justify-content: flex-start;
@@ -72,19 +72,27 @@
 
   .subtitle {
     color: var(--white);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
     opacity: 0.7;
     text-transform: uppercase;
+
+    @include respond-to-tablet {
+      font-size: 1.8rem;
+    }
   }
 
   .title {
     color: var(--white);
     font-family: var(--font-secondary);
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     line-height: 3.2rem;
     margin-top: 0;
     max-width: 30rem;
+
+    @include respond-to-tablet {
+      font-size: 2.5rem;
+    }
   }
 
   .content {
