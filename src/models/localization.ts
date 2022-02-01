@@ -24,6 +24,9 @@ export type Localization = {
   skills: {
     subtitle: string;
     title: string;
+    frontend: string;
+    backend: string;
+    tool: string;
   };
   techniques: Record<Technique, string>;
 };

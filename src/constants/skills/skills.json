@@ -1,0 +1,27 @@
+{
+  "frontend": [
+    "svelte",
+    "astro",
+    "tailwind",
+    "next-js",
+    "scss",
+    "react-js",
+    "vue-js",
+    "javascript",
+    "gatsby",
+    "css",
+    "html"
+  ],
+  "backend": [
+    "nest-js",
+    "socket-io",
+    "graphql",
+    "node-js",
+    "php",
+    "laravel"
+  ],
+  "tool": [
+    "contentful",
+    "docker"
+  ]
+}

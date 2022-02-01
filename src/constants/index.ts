@@ -1,22 +1,32 @@
 import { Locale, Localization } from "../models/localization";
 import { Project } from "../models/project";
+import { Skill } from "../models/skill";
+import { Technique } from "../models/technique";
 
-import localizationsEN from "./localizations/en.json";
-import localizationsNL from "./localizations/nl.json";
-import projectsEN from "./projects/en.json";
-import projectsNL from "./projects/nl.json";
+import localizationsEnJson from "./localizations/en.json";
+import localizationsNlJson from "./localizations/nl.json";
+import projectsEnJson from "./projects/en.json";
+import projectsNlJson from "./projects/nl.json";
+import skillsJson from "./skills/skills.json";
 
 export const localizations: Record<Locale, Localization> = {
-  en: localizationsEN,
-  nl: localizationsNL,
+  en: localizationsEnJson,
+  nl: localizationsNlJson,
 };
 
 export const projects: Record<Locale, Project[]> = {
-  en: projectsEN,
-  nl: projectsNL,
+  en: projectsEnJson as Project[],
+  nl: projectsNlJson as Project[],
+};
+
+export const skills: Record<Skill, Technique[]> = {
+  frontend: skillsJson.frontend as Technique[],
+  backend: skillsJson.backend as Technique[],
+  tool: skillsJson.tool as Technique[],
 };
 
 export default {
   localizations,
   projects,
+  skills,
 };

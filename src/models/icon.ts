@@ -15,7 +15,6 @@ export type Icon =
   | "nest-js"
   | "next-js"
   | "node-js"
-  | "node-js"
   | "php"
   | "react-js"
   | "scss"

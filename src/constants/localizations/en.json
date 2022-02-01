@@ -22,13 +22,32 @@
   },
   "skills": {
     "subtitle": "Skills",
-    "title": "De vaardigheden die ik bezit"
+    "title": "De vaardigheden die ik bezit",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tool": "Tool"
   },
   "techniques": {
+    "astro": "Astro",
+    "contentful": "Contentful",
+    "css": "CSS",
+    "docker": "Docker",
+    "gatsby": "Gatsby",
+    "graphql": "GraphQL",
+    "html": "HTML",
+    "javascript": "JavaScript",
+    "jquery": "jQuery",
+    "laravel": "Laravel",
+    "nest-js": "Nest.js",
     "next-js": "Next.js",
-    "react-js": "React.js",
     "node-js": "Node.js",
+    "php": "PHP",
+    "react-js": "React.js",
     "scss": "SCSS",
-    "socket-io": "Socket.io"
+    "socket-io": "Socket.io",
+    "svelte": "Svelte",
+    "tailwind": "Tailwind",
+    "vue-js": "Vue.js",
+    "wordpress": "WordPress"
   }
 }

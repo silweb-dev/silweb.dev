@@ -1,6 +1,21 @@
 export type Technique =
+  | "astro"
+  | "contentful"
+  | "css"
+  | "docker"
+  | "gatsby"
+  | "html"
+  | "javascript"
+  | "jquery"
+  | "laravel"
+  | "nest-js"
   | "next-js"
-  | "react-js"
   | "node-js"
+  | "php"
+  | "react-js"
   | "scss"
-  | "socket-io";
+  | "socket-io"
+  | "svelte"
+  | "tailwind"
+  | "vue-js"
+  | "wordpress";
