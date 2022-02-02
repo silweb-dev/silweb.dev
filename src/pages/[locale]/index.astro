@@ -3,6 +3,7 @@ import { Project } from "../../models/project";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import constants from "../../constants";
 import Contact from "../../components/contact.svelte";
+import Footer from "../../components/footer.svelte";
 import Header from "../../components/header.svelte";
 import i18next from "../../utils/i18next";
 import Intro from "../../components/intro.svelte";
@@ -30,5 +31,6 @@ export async function getStaticPaths() {
 		<Projects projects={projects} client:visible />
     <Skills />
     <Contact />
+    <Footer />
 	</main>
 </BaseLayout>
