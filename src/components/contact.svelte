@@ -46,9 +46,13 @@
 
   .form label {
     color: var(--grey-400);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 1.8rem;
     width: 100%;
+
+    @include respond-to-tablet {
+      font-size: 1.6rem;
+    }
   }
 
   .form input,
@@ -58,10 +62,14 @@
     border: none;
     color: var(--white);
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-top: 0.8rem;
     padding: 0.8rem 1.2rem;
     width: 100%;
+
+    @include respond-to-tablet {
+      font-size: 1.5rem;
+    }
 
     &:focus {
       outline: 0.1rem solid var(--cyan-400);
