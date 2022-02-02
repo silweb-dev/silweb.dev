@@ -10,7 +10,10 @@ import Intro from "../../components/intro.svelte";
 import Projects from "../../components/projects.svelte";
 import Skills from "../../components/skills.svelte";
 
-const { locale } = Astro.request.params;
+const { locale: requestLocale } = Astro.request.params;
+const { locale: propLocale } = Astro.props;
+
+const locale = requestLocale || propLocale || 'en';
 
 i18next.changeLanguage(locale);
 
