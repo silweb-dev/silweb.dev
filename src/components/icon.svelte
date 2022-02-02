@@ -8,6 +8,7 @@
   const styles = {
     "background-color": color,
     "mask-image": `url(/icons/${name}.svg)`,
+    "-webkit-mask-image": `url(/icons/${name}.svg)`,
     height: `${size}rem`,
     width: `${size}rem`,
   };
