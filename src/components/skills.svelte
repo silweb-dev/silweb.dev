@@ -30,6 +30,8 @@
 </Section>
 
 <style lang="scss">
+  @use "../styles/mixins.scss" as *;
+
   .groups {
     align-items: flex-end;
     display: flex;

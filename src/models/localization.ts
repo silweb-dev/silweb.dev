@@ -28,6 +28,16 @@ export type Localization = {
     backend: string;
     tool: string;
   };
+  contact: {
+    title: string;
+    subtitle: string;
+    form: {
+      name: string;
+      email: string;
+      message: string;
+      send: string;
+    };
+  };
   techniques: Record<Technique, string>;
 };
 

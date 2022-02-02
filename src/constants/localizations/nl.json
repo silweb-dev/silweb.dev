@@ -27,6 +27,16 @@
     "backend": "Backend",
     "tool": "Tool"
   },
+  "contact": {
+    "title": "Neem gerust contact met mij op!",
+    "subtitle": "Contact",
+    "form": {
+      "name": "Naam",
+      "email": "Email",
+      "message": "Bericht",
+      "send": "Verstuur"
+    }
+  },
   "techniques": {
     "astro": "Astro",
     "contentful": "Contentful",

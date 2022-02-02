@@ -27,7 +27,12 @@
 
   .section {
     background-color: var(--blue-400);
+    min-height: 60rem;
     width: 100%;
+
+    @include respond-to-tablet {
+      min-height: 80rem;
+    }
   }
 
   .inner {

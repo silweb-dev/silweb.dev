@@ -24,6 +24,6 @@
     display: block;
     mask-position: center;
     mask-repeat: no-repeat;
-    mask-size: 100%;
+    mask-size: contain;
   }
 </style>

@@ -8,24 +8,34 @@
     }
   },
   "intro": {
-    "title": "Hoi, ik ben <strong>Silvan</strong>",
+    "title": "Hi, I am <strong>Silvan</strong>",
     "description": {
-      "line1": "een <strong>frontend</strong> en",
+      "line1": "a <strong>frontend</strong> and",
       "line2": "<strong>backend</strong> developer"
     },
-    "showWork": "Zie mijn werk"
+    "showWork": "See my work"
   },
   "projects": {
     "subtitle": "Portfolio",
-    "title": "Projecten waar ik aan gewerkt heb",
-    "seeProject": "Zie project"
+    "title": "Projects I worked on",
+    "seeProject": "View project"
   },
   "skills": {
     "subtitle": "Skills",
-    "title": "De vaardigheden die ik bezit",
+    "title": "The skills I have",
     "frontend": "Frontend",
     "backend": "Backend",
     "tool": "Tool"
+  },
+  "contact": {
+    "title": "Feel free to contact me!",
+    "subtitle": "Contact",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send"
+    }
   },
   "techniques": {
     "astro": "Astro",

@@ -46,6 +46,7 @@
     left: 0;
     position: absolute;
     right: 0;
+    top: 0.8rem;
     z-index: 1;
   }
 
