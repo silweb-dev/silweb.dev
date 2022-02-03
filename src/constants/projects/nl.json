@@ -28,5 +28,19 @@
     ],
     "preview": "",
     "url": "https://pipopipette.com"
+  },
+  {
+    "id": "krabblio",
+    "title": "Krabbl.io",
+    "type": "Web App",
+    "description": "Op Krabbl.io kan je online samen met anderen het teken-spel Pictionary spelen.",
+    "techniques": [
+      "react-js",
+      "nest-js",
+      "scss",
+      "socket-io"
+    ],
+    "preview": "krabblio.gif",
+    "url": "https://krabbl.io"
   }
 ]
