@@ -1,6 +1,6 @@
 <script lang="ts">
-  import i18next from "../utils/i18next";
-  import Icon from "./icon.svelte";
+  import i18next from "utils/i18next";
+  import Icon from "components/atoms/icon.svelte";
 </script>
 
 <section class="section">
@@ -22,7 +22,7 @@
 </section>
 
 <style lang="scss">
-  @use "../styles/mixins.scss" as *;
+  @use "../../styles/mixins.scss" as *;
 
   .section {
     animation: gradient 15s ease infinite;

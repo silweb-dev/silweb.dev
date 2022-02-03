@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Icon from "../components/icon.svelte";
+  import Icon from "components/atoms/icon.svelte";
 </script>
 
 <div class="footer">
@@ -9,7 +9,7 @@
 </div>
 
 <style lang="scss">
-  @use "../styles/mixins.scss" as *;
+  @use "../../styles/mixins.scss" as *;
 
   .footer {
     background: var(--blue-500);

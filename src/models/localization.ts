@@ -1,5 +1,5 @@
-import { NavigationItem } from "../models/navigation";
-import { Technique } from "../models/technique";
+import { NavigationItem } from "models/navigation";
+import { Technique } from "models/technique";
 
 export type Locale = "en" | "nl";
 

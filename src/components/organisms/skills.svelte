@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { skills } from "../constants";
-  import i18next from "../utils/i18next";
-  import Section from "./section.svelte";
-  import Techniques from "./techniques.svelte";
+  import { skills } from "constants/index";
+  import i18next from "utils/i18next";
+  import Section from "components/molecules/section.svelte";
+  import Techniques from "components/molecules/techniques.svelte";
 
   const { frontend, backend, tool } = skills;
 </script>
@@ -30,7 +30,7 @@
 </Section>
 
 <style lang="scss">
-  @use "../styles/mixins.scss" as *;
+  @use "../../styles/mixins.scss" as *;
 
   .groups {
     align-items: flex-end;

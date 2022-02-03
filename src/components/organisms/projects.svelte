@@ -1,9 +1,9 @@
 <script lang="ts">
-  import { formatNumber } from "../utils/format";
-  import { Project } from "../models/project";
-  import i18next from "../utils/i18next";
-  import Icon from "./icon.svelte";
-  import Section from "./section.svelte";
+  import { formatNumber } from "utils/format";
+  import { Project } from "models/project";
+  import i18next from "utils/i18next";
+  import Icon from "components/atoms/icon.svelte";
+  import Section from "components/molecules/section.svelte";
 
   export let projects: Project[];
 
@@ -91,7 +91,7 @@
 </Section>
 
 <style lang="scss">
-  @use "../styles/mixins.scss" as *;
+  @use "../../styles/mixins.scss" as *;
 
   .controls {
     align-items: center;

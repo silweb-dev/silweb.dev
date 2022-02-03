@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { Technique } from "../models/technique";
-  import i18next from "../utils/i18next";
-  import Icon from "./icon.svelte";
+  import { Technique } from "models/technique";
+  import i18next from "utils/i18next";
+  import Icon from "components/atoms/icon.svelte";
 
   export let items: Technique[];
 </script>

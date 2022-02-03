@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Button from "./button.svelte";
-  import i18next from "../utils/i18next";
-  import Section from "./section.svelte";
+  import Button from "components/atoms/button.svelte";
+  import i18next from "utils/i18next";
+  import Section from "components/molecules/section.svelte";
 </script>
 
 <Section
@@ -34,7 +34,7 @@
 </Section>
 
 <style lang="scss">
-  @use "../styles/mixins.scss" as *;
+  @use "../../styles/mixins.scss" as *;
 
   .form {
     align-items: center;

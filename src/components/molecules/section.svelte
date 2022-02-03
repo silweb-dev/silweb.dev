@@ -23,7 +23,7 @@
 </section>
 
 <style lang="scss">
-  @use "../styles/mixins.scss" as *;
+  @use "../../styles/mixins.scss" as *;
 
   .section {
     background-color: var(--blue-400);

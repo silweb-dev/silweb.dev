@@ -3,7 +3,7 @@
 </button>
 
 <style lang="scss">
-  @use "../styles/mixins.scss" as *;
+  @use "../../styles/mixins.scss" as *;
 
   .button {
     background: var(--blue-300);

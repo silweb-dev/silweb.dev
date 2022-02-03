@@ -1,5 +1,5 @@
 <script lang="ts">
-  import i18next from "../utils/i18next";
+  import i18next from "utils/i18next";
 </script>
 
 <header class="header">
@@ -38,7 +38,7 @@
 </header>
 
 <style lang="scss">
-  @use "../styles/mixins.scss" as *;
+  @use "../../styles/mixins.scss" as *;
 
   .header {
     @include centered;

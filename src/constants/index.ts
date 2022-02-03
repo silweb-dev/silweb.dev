@@ -1,7 +1,7 @@
-import { Locale, Localization } from "../models/localization";
-import { Project } from "../models/project";
-import { Skill } from "../models/skill";
-import { Technique } from "../models/technique";
+import { Locale, Localization } from "models/localization";
+import { Project } from "models/project";
+import { Skill } from "models/skill";
+import { Technique } from "models/technique";
 
 import localizationsEnJson from "./localizations/en.json";
 import localizationsNlJson from "./localizations/nl.json";
