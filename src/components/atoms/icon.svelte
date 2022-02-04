@@ -5,7 +5,7 @@
   export let color = "var(--white)";
   export let size = 2.4;
 
-  const styles = {
+  $: styles = {
     "background-color": color,
     "mask-image": `url(/icons/${name}.svg)`,
     "-webkit-mask-image": `url(/icons/${name}.svg)`,
@@ -13,7 +13,7 @@
     width: `${size}rem`,
   };
 
-  const cssStyles = Object.entries(styles)
+  $: cssStyles = Object.entries(styles)
     .map(([key, value]) => `${key}:${value}`)
     .join(";");
 </script>

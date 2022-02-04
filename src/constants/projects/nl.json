@@ -26,14 +26,14 @@
       "scss",
       "socket-io"
     ],
-    "preview": "",
+    "preview": "pipopipette.png",
     "url": "https://pipopipette.com"
   },
   {
     "id": "krabblio",
     "title": "Krabbl.io",
     "type": "Web App",
-    "description": "Op Krabbl.io kan je online samen met anderen het teken-spel Pictionary spelen.",
+    "description": "Op Krabbl.io kan je online samen met anderen het tekenspel Pictionary spelen.",
     "techniques": [
       "react-js",
       "nest-js",
@@ -42,5 +42,19 @@
     ],
     "preview": "krabblio.gif",
     "url": "https://krabbl.io"
+  },
+  {
+    "id": "csvbol",
+    "title": "Management tool csv BOL",
+    "type": "Web App",
+    "description": "Voor voetbalclub csv BOL heb ik een tool gemaakt die het werk van de vrijwilligers van de club eenvoudiger en geautomatiseerd maakt. De tool stelt de vrijwilligers in staat om kleedkamer- en scheidsrechterindelingen te maken.",
+    "techniques": [
+      "laravel",
+      "php",
+      "html",
+      "css",
+      "jquery"
+    ],
+    "preview": "csvbolbeheer.gif"
   }
 ]
