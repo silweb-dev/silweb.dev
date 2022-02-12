@@ -49,10 +49,12 @@
   }
 
   .greeting {
+    height: 20rem;
     margin-bottom: 15rem;
   }
 
   .title {
+    animation: slide-in 0.3s forwards;
     color: var(--white);
     font-family: var(--font-secondary);
     font-size: 3.8rem;
@@ -68,6 +70,7 @@
   }
 
   .description {
+    animation: slide-in 0.6s forwards;
     display: flex;
     flex-direction: column;
   }
@@ -143,6 +146,17 @@
     }
     100% {
       background-position: 0% 50%;
+    }
+  }
+
+  @keyframes slide-in {
+    0% {
+      margin-top: 1rem;
+      opacity: 0;
+    }
+    100% {
+      margin-top: 0;
+      opacity: 1;
     }
   }
 </style>
