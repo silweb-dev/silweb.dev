@@ -18,6 +18,11 @@
       <Icon name="chevron-down" size={3} />
       {i18next.t("intro.showWork")}
     </a>
+    <img
+      src="/drawings/person-laptop.svg"
+      alt="Person laptop"
+      class="person-laptop"
+    />
   </div>
 </section>
 
@@ -110,6 +115,22 @@
 
     @include respond-to-tablet {
       font-size: 1.6rem;
+    }
+  }
+
+  .person-laptop {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -10rem;
+    display: none;
+    height: 40rem;
+    margin: 0 auto;
+    position: absolute;
+    right: 1.4rem;
+
+    @include respond-to-tablet {
+      display: block;
     }
   }
 
