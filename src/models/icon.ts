@@ -3,6 +3,7 @@ export type Icon =
   | "arrow-right"
   | "astro"
   | "chevron-down"
+  | "close"
   | "contentful"
   | "css"
   | "docker"

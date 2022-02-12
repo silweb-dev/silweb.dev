@@ -18,14 +18,16 @@
   "projects": {
     "subtitle": "Portfolio",
     "title": "Projecten waar ik aan gewerkt heb",
-    "seeProject": "Zie project"
+    "seeProject": "Zie project",
+    "previous": "Vorige",
+    "next": "Volgende"
   },
   "skills": {
     "subtitle": "Skills",
     "title": "De vaardigheden die ik bezit",
     "frontend": "Frontend",
     "backend": "Backend",
-    "tool": "Tool"
+    "tool": "Tools"
   },
   "contact": {
     "title": "Neem gerust contact met mij op!",

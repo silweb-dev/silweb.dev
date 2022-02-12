@@ -31,7 +31,7 @@
       label={i18next.t("contact.form.message")}
       required
     />
-    <Button>
+    <Button submit>
       {i18next.t("contact.form.send")}
     </Button>
   </Form>

@@ -18,14 +18,16 @@
   "projects": {
     "subtitle": "Portfolio",
     "title": "Projects I worked on",
-    "seeProject": "View project"
+    "seeProject": "View project",
+    "previous": "Previous",
+    "next": "Next"
   },
   "skills": {
     "subtitle": "Skills",
     "title": "The skills I have",
     "frontend": "Frontend",
     "backend": "Backend",
-    "tool": "Tool"
+    "tool": "Tools"
   },
   "contact": {
     "title": "Feel free to contact me!",

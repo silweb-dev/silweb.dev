@@ -1,9 +1,16 @@
 <script lang="ts">
+  import { createEventDispatcher } from "svelte";
   import { Project } from "models/project";
   import i18next from "utils/i18next";
   import Icon from "components/atoms/icon.svelte";
 
+  const dispatch = createEventDispatcher();
+
   export let project: Project;
+
+  function handleLightbox() {
+    dispatch("lightbox")
+  }
 </script>
 
 <div class="project">
@@ -26,7 +33,7 @@
       </a>
     {/if}
   </div>
-  <div class="project-preview">
+  <div class="project-preview" on:click={handleLightbox}>
     <div class="preview">
       <div
         style={`background-image: url(/previews/${project.preview})`}
@@ -66,6 +73,7 @@
   }
 
   .project-preview {
+    cursor: pointer;
     grid-area: preview;
     margin: 1.2rem 0;
 

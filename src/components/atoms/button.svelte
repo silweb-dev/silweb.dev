@@ -1,4 +1,16 @@
-<button type="submit" class="button">
+<script lang="ts">
+  type ButtonType = "default" | "transparent";
+
+  export let type: ButtonType = "default";
+  export let submit: boolean = false;
+</script>
+
+<button
+  type={submit ? "submit" : "button"}
+  class="button"
+  class:transparent={type === "transparent"}
+  on:click
+>
   <slot />
 </button>
 
@@ -21,6 +33,10 @@
 
     &:hover {
       background: var(--cyan-400);
+    }
+
+    &.transparent {
+      background: transparent;
     }
   }
 </style>

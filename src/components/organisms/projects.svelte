@@ -3,13 +3,17 @@
   import { Project as ProjectModel } from "models/project";
   import i18next from "utils/i18next";
   import Icon from "components/atoms/icon.svelte";
+  import Lightbox from "components/molecules/lightbox.svelte";
   import Project from "components/molecules/project.svelte";
   import Section from "components/molecules/section.svelte";
 
   export let projects: ProjectModel[];
 
+  let lightboxVisible = false;
+
   let tick = 0;
   setInterval(() => {
+    if (lightboxVisible) return;
     tick += 1;
     if (tick >= 100) next();
   }, 100);
@@ -42,7 +46,7 @@
   title={i18next.t("projects.title")}
 >
   <div class="controls">
-    <button class="control-button" on:click={previous}>
+    <button class="control-button" title={i18next.t("projects.previous")} on:click={previous}>
       <Icon name="arrow-left" size={2} />
     </button>
     <div class="progress">
@@ -50,13 +54,24 @@
       <span class="progress-separator">/</span>
       <span class="progress-total">{formatNumber(projects.length, 2)}</span>
     </div>
-    <button class="control-button" on:click={next}>
+    <button class="control-button" title={i18next.t("projects.next")} on:click={next}>
       <Icon name="arrow-right" size={2} />
       <div class="time-indicator" style={`width: ${tick}%`} />
     </button>
   </div>
-  <Project project={currentProject} />
+  <Project
+    project={currentProject}
+    on:lightbox={() => (lightboxVisible = true)}
+  />
 </Section>
+
+{#if lightboxVisible}
+  <Lightbox
+    src={`/previews/${currentProject.preview}`}
+    title={currentProject.title}
+    on:close={() => (lightboxVisible = false)}
+  />
+{/if}
 
 <style lang="scss">
   @use "../../styles/mixins.scss" as *;

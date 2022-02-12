@@ -20,6 +20,8 @@ export type Localization = {
     subtitle: string;
     title: string;
     seeProject: string;
+    previous: string;
+    next: string;
   };
   skills: {
     subtitle: string;
