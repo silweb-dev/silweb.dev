@@ -17,7 +17,7 @@ const locale = requestLocale || propLocale || 'en';
 
 i18next.changeLanguage(locale);
 
-const projects = constants.projects[locale] as Project[];
+const projects = constants.projects[locale];
 
 export async function getStaticPaths() {
   return [
@@ -28,12 +28,12 @@ export async function getStaticPaths() {
 ---
 
 <BaseLayout locale={locale} title='Home'>
-	<main>
+  <main>
     <Header />
-		<Intro />
-		<Projects projects={projects} client:visible />
+    <Intro />
+    <Projects projects={projects} client:visible />
     <Skills />
     <Contact />
     <Footer />
-	</main>
+  </main>
 </BaseLayout>
