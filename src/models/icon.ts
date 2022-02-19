@@ -7,6 +7,7 @@ export type Icon =
   | "contentful"
   | "css"
   | "docker"
+  | "external"
   | "eye"
   | "gatsby"
   | "html"
