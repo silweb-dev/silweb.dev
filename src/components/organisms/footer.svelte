@@ -1,13 +1,14 @@
 <script lang="ts">
   import Icon from "components/atoms/icon.svelte";
+  import Link from "components/atoms/link.svelte";
 </script>
 
 <div class="footer">
   <span class="text">
-    Built with Astro <Icon name="astro" /> &bullet;
-    <a href="https://github.com/silweb-dev/silweb.dev" target="_blank"
-      >View on GitHub</a
-    >
+    <Icon name="astro" />
+    <Link href="https://github.com/silweb-dev/silweb.dev" external>
+      Built with Astro
+    </Link>
   </span>
 </div>
 
