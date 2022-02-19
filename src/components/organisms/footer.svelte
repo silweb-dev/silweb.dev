@@ -4,7 +4,10 @@
 
 <div class="footer">
   <span class="text">
-    Built with Astro <Icon name="astro" />
+    Built with Astro <Icon name="astro" /> &bullet;
+    <a href="https://github.com/silweb-dev/silweb.dev" target="_blank"
+      >View on GitHub</a
+    >
   </span>
 </div>
 

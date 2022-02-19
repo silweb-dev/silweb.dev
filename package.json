@@ -1,7 +1,6 @@
 {
   "name": "silweb.dev-astro",
-  "version": "0.0.1",
-  "private": true,
+  "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
