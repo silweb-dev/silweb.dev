@@ -12,6 +12,7 @@
       "socket-io"
     ],
     "preview": "syncwatch.gif",
+    "previewFull": "syncwatch-full.gif",
     "url": "https://syncwatch.video"
   },
   {
@@ -27,6 +28,7 @@
       "socket-io"
     ],
     "preview": "pipopipette.png",
+    "previewFull": "pipopipette-full.png",
     "url": "https://pipopipette.com"
   },
   {
@@ -41,6 +43,7 @@
       "socket-io"
     ],
     "preview": "krabblio.gif",
+    "previewFull": "krabblio-full.gif",
     "url": "https://krabbl.io"
   },
   {
@@ -55,6 +58,7 @@
       "css",
       "jquery"
     ],
-    "preview": "csvbolbeheer.gif"
+    "preview": "csvbolbeheer.gif",
+    "previewFull": "csvbolbeheer-full.gif"
   }
 ]

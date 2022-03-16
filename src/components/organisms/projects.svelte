@@ -67,7 +67,7 @@
 
 {#if lightboxVisible}
   <Lightbox
-    src={`/previews/${currentProject.preview}`}
+    src={`/previews/${currentProject.previewFull}`}
     title={currentProject.title}
     on:close={() => (lightboxVisible = false)}
   />

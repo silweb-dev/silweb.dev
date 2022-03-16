@@ -7,5 +7,6 @@ export type Project = {
   description: string;
   techniques: Technique[];
   preview: string;
+  previewFull: string;
   url: string;
 };
